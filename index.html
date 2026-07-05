@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma a Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header" class="smart-header">
+        <div class="container menu-container">
+            <a href="#inicio" class="logo">Aroma a Café</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#calientes">Calientes</a></li>
+                    <li><a href="#frias">Frías</a></li>
+                    <li><a href="#postres">Postres</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-txt">
+                <h1>Bienvenid@<br><span>Un rincón con aroma a hogar y sabor a café.</span></h1>
+                <p>En Aroma a Café, creemos que una taza de café es mucho más que una bebida para empezar el día; es la excusa perfecta para pausar el tiempo, compartir una buena plática o disfrutar de un momento a solas.
+
+Nos apasiona recibirte con el olor a grano recién molido y pan calientito saliendo del horno. Cada una de nuestras tazas está preparada con paciencia, dedicación y el cariño de quienes aman lo que hacen, buscando recordarte ese sabor casero que reconforta el alma.
+
+</p>
+                <a href="#nosotros" class="btn-primary">Información</a>
+            </div>
+            <div class="hero-img">
+                <img src="img/Helado.jpeg" alt="Delicias de café y helado">
+            </div>
+        </div>
+    </section>
+
+    <section id="promociones" class="categoria-seccion container">
+        <h2>Promociones</h2>
+        <p class="subtitulo">Ofertas por tiempo limitado</p>
+        
+        <div class="carousel-wrapper">
+            <button class="carousel-btn" id="btn-prev">❮</button>
+            <div class="carrusel-container" id="promos-carousel">
+                <div class="box">
+                    <div class="tag-oferta">Ahorra un 20%</div>
+                    <img src="img/cafenegro.jpeg" alt="Promoción 1">
+                    <div class="product-txt">
+                        <h3>Paquete Matutino</h3>
+                        <p>Croissant plano con mantequilla y café.</p>
+                        <span class="precio">$9.50</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tag-oferta">2x1</div>
+                    <img src="img/cafehel.png" alt="Promoción 2">
+                    <div class="product-txt">
+                        <h3>Doble Cold Brew</h3>
+                        <p>Dos cafés extraídos en frío por 18 hrs.</p>
+                        <span class="precio">$8.00</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tag-oferta">-15%</div>
+                    <img src="img/pastel.jpeg" alt="Promoción 3">
+                    <div class="product-txt">
+                        <h3>Combo Dulce</h3>
+                        <p>Rebanada de pastel a elección + Americano.</p>
+                        <span class="precio">$7.50</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tag-oferta">Nuevo</div>
+                    <img src="img/taza.png" alt="Promoción 4">
+                    <div class="product-txt">
+                        <h3>Especial Mocha</h3>
+                        <p>Mocha blanco con extra shot de espresso.</p>
+                        <span class="precio">$6.00</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="btn-next">❯</button>
+        </div>
+    </section>
+
+    <section id="calientes" class="categoria-seccion container">
+        <h2>Bebidas Calientes</h2>
+        <p class="subtitulo">Tazas elaboradas con técnica experta</p>
+        
+        <div class="box-container limit-grid">
+            <div class="box product-item">
+                <img src="img/taza.png" alt="Blanco plano">
+                <div class="product-txt">
+                    <h3>Blanco plano</h3>
+                    <p>Microespuma terciopelo vertida sobre un doble ristretto.</p>
+                    <span class="precio">$5.00</span>
+                </div>
+            </div>
+            <div class="box product-item">
+                <img src="img/taza2.png" alt="Cappuccino">
+                <div class="product-txt">
+                    <h3>Cappuccino Clásico</h3>
+                    <p>Espresso intenso coronado con espuma de leche sedosa.</p>
+                    <span class="precio">$4.50</span>
+                </div>
+            </div>
+            </div>
+        
+        <div class="btn-container-center">
+            <button class="btn-secundario">Ver más productos</button>
+        </div>
+    </section>
+
+    <section id="frias" class="categoria-seccion container">
+        <h2>Bebidas Frías</h2>
+        <p class="subtitulo">Frío, refrescante y elaborado con intención</p>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/cafehel.png" alt="Cerveza fría exclusiva">
+                <div class="product-txt">
+                    <h3>Cerveza fría exclusiva</h3>
+                    <p>Empapado 18 horas en agua filtrada, suave y atrevido.</p>
+                    <span class="precio">$5.50</span>
+                    <a href="#" class="btn-3" data-id="3">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="postres" class="categoria-seccion container">
+        <h2>Postres</h2>
+        <p class="subtitulo">Horneado fresco cada mañana por nuestro equipo</p>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/pastel.jpeg" alt="Croissant">
+                <div class="product-txt">
+                    <h3>Croissant de almendras</h3>
+                    <p>Al horno dos veces con frangipane y hojuelas tostadas.</p>
+                    <span class="precio">$4.50</span>
+                    <a href="#" class="btn-3" data-id="4">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="nosotros" class="footer">
+        <div class="footer-content container">
+            <div class="info-footer">
+                <h3>Encuéntranos</h3>
+                <p>📍 Plaza las Armas, Cuernavaca, Mor. C/P62302</p>
+                <p>📞 777-543-16-37</p>
+            </div>
+            <div class="social-footer">
+                <h3>Síguenos</h3>
+                <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/interfaz.js"></script> </body>
+</html>
