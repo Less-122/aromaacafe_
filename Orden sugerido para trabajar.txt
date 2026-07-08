@@ -1,0 +1,37 @@
+aromaacafe_
+│
+├── vista_admin/
+│   ├── admin_header.html
+│   ├── admin_menu.html
+│   ├── dashboard.html
+│   ├── productos.html
+│   ├── categorias.html
+│   ├── pedidos.html
+│   ├── usuarios.html
+│   └── promociones.html
+│
+├── vista_cliente/
+│   ├── index.html
+│   ├── menu.html
+│   ├── carrito.html
+│   ├── producto.html
+│   └── contacto.html (opcional)
+│
+├── estilos/
+│   ├── style.css
+│   ├── admin.css
+│   └── carrito.css
+│
+├── js/
+│   └── script.js
+│
+├── img/
+│
+├── base_datos/
+│   └── aromaacafe_db.sql
+│
+├── config/
+│   └── conexion.php   (más adelante)
+│
+├── login.html
+└── README.md
