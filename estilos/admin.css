@@ -8,7 +8,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background-size: cover;
     background-color: #F2F4F6;
     display: grid;
     grid-template-columns: 250px 1fr; 
@@ -54,8 +53,9 @@ body{
 }
 
 .header_logo {
-    height: 50px;
-    width: 50px; 
+    width: 100%;
+    height: 60%;
+    object-fit: contain; 
     margin: 0; 
 }
 
@@ -86,7 +86,7 @@ body{
 .admin_name {
     font-weight: bold;
     color: #374151; 
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .admin_role {
@@ -111,6 +111,7 @@ body{
 }
 
 .menu_element{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     padding: .8rem 1.3rem;
     border-radius: 3px;
@@ -135,6 +136,7 @@ body{
 }
 
 .menu_text{
+    font-family: "Roboto Slab", serif;
     padding-left: 1.3rem;
 }
 
@@ -240,4 +242,103 @@ th, td{
 
 th{
     text-align: left;
+}
+ 
+
+@media (max-width: 768px) {
+    
+    body {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .header {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .header_menu {
+        display: none !important;
+    }
+
+    .header_content {
+        width: 100% !important;
+        padding: 1rem !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu {
+        width: 100% !important;
+        padding: 1rem 0 !important;
+    }
+
+    .lista_menu {
+        min-height: auto !important;
+        flex-direction: row !important; 
+        flex-wrap: wrap !important; 
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    .menu_element {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0.5rem 1rem !important;
+    }
+
+    .menu_text {
+        padding-left: 0 !important;
+        font-size: 0.85rem !important;
+        margin-top: 5px;
+    }
+
+    .main_container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important; 
+        padding: 1rem !important;
+    }
+
+    section {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .filtros_container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .search_box, .select_box {
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+
+    .search_box input, .custom_select {
+        width: 80% !important; 
+    }
+
+    section div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_add, .btn_edit, .btn_delete {
+        text-align: center !important;
+    }
+
+    table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        margin-top: 20px !important;
+    }
 }

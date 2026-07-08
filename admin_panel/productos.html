@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/estilos/admin.css">
 </head>
 <body>
-
     <div id="header-placeholder" class="header-placeholder"></div>
 
     <div id="menu-placeholder" class="menu-placeholder"></div>
@@ -18,12 +17,12 @@
         <div class="filtros_container">
             <div class="search_box">
                 <ion-icon name="search-outline" class="icono_filtro"></ion-icon>
-                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <input type="text" id="searchInput" placeholder="Buscar productos">
             </div>
 
             <div class="select_box">
                 <ion-icon name="pricetag-outline" class="icono_filtro"></ion-icon>
-                <select name="seleccion" class="custom_select" required>
+                <select name="seleccion" class="custom_select">
                     <option value="" disabled selected>Todas las categorías</option>
                     <option value="valor1">Bebidas calientes</option>
                     <option value="valor2">Bebidas frías</option>
@@ -33,6 +32,7 @@
         </div>
         
         <div>
+            <!--<button id="test">test</button>-->
             <a href="#" class="btn_add">Añadir nuevo</a>
             <a href="#" class="btn_edit">Modificar</a>
             <a href="#" class="btn_delete">Borrar</a>
@@ -71,19 +71,21 @@
     </main>
 
     <script>
-        // Cargar el encabezado
         fetch('/admin_panel/admin_header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             });
 
-        // Cargar el menú lateral
         fetch('/admin_panel/admin_menu.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('menu-placeholder').innerHTML = data;
             });
+
+            /*document.getElementById('test').onclick=function(){
+                alert("Hola mundo")
+            }*/
     </script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
