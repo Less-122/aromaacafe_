@@ -358,3 +358,31 @@ body {
         grid-template-columns: 1fr; 
     }
 }
+/* --- Controles de Usuario en el Header --- */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre los dos íconos */
+    margin-left: auto; /* Empuja los botones a la extrema derecha si hay espacio */
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1); /* Pequeño efecto visual al pasar el mouse */
+}
+
+.icon-btn img {
+    width: 28px; /* Ajusta este valor si los íconos se ven muy grandes o pequeños */
+    height: 28px;
+    object-fit: contain;
+}
