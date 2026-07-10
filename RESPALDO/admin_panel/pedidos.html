@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="/estilos/admin.css">
+</head>
+<body>
+
+    <div id="header-placeholder" class="header-placeholder"></div>
+
+    <div id="menu-placeholder" class="menu-placeholder"></div>
+
+    <main class="main_container">
+        <h1 class="titulo">Gestión de Pedidos</h1>
+    <section>
+        <div class="filtros_container">
+            <div class="search_box">
+                <ion-icon name="search-outline" class="icono_filtro"></ion-icon>
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btn_add">Añadir nuevo</a>
+            <a href="#" class="btn_edit">Modificar</a>
+            <a href="#" class="btn_delete">Borrar</a>
+        </div>
+    </section>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Dirección</th>
+            <th>Fecha</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="seleccion" value="1"></td>
+            <td>778</td>
+            <td>Pepe</td>
+            <td>Zacatepec #23</td>
+            <td>30-Jun-26</td>
+            <td>99</td>
+        </tr>
+    </table>
+
+    </main>
+    <script>
+        // Cargar el encabezado
+        fetch('/admin_panel/admin_header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Cargar el menú lateral
+        fetch('/admin_panel/admin_menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-placeholder').innerHTML = data;
+            });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
