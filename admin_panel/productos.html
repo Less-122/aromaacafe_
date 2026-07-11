@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link rel="stylesheet" href="/estilos/admin.css">
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
     <div id="header-placeholder" class="header-placeholder"></div>
@@ -33,12 +33,12 @@
         
         <div>
             <!--<button id="test">test</button>-->
-            <a href="#" class="btn_add">Añadir nuevo</a>
-            <a href="#" class="btn_edit">Modificar</a>
-            <a href="#" class="btn_delete">Borrar</a>
+            <button data-modal="modalAdd" class="btn-add">Añadir</button>
+            <button id="btnEdit" class="btn-edit">Modificar</button>
+            <button class="btn-delete">Borrar</button>
         </div>
     </section>
-    
+
     <table>
             <tr>
                 <th></th>
@@ -48,45 +48,65 @@
                 <th>Categoría</th>
                 <th>Precio</th>
                 <th>img_url</th>
+                <th>Promoción</th>
             </tr>
             <tr>
                 <td><input type="checkbox" name="seleccion" value="1"></td>
                 <td>456</td>
-                <td>Hogar</td>
-                <td>Café ....</td>
+                <td>Cappuccino</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
                 <td>Bebida caliente</td>
                 <td>90</td>
-                <td>hogar.jpg</td>
+                <td>imp.jpg</td>
+                <td><input type="checkbox" name="seleccion" value="prom"></td>
             </tr>
             <tr>
                 <td><input type="checkbox" name="seleccion" value="2"></td>
                 <td>456</td>
-                <td>Hogar</td>
-                <td>Café ....</td>
+                <td>Chocolate</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
                 <td>Bebida caliente</td>
                 <td>90</td>
-                <td>hogar.jpg</td>
+                <td>img.jpg</td>
+                <td><input type="checkbox" name="seleccion" value="prom"></td>
             </tr>
         </table>
     </main>
 
-    <script>
-        fetch('/admin_panel/admin_header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
+    <!-- Modal añadir -->
+<div id="modalAdd" class="modal">
+  <div class="modal-content">
+    <span class="close" data-modal="modalAdd">&times;</span>
+    <h2>Añadir nuevo producto</h2>
+    <form id="formAdd" action="#" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-        fetch('/admin_panel/admin_menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-placeholder').innerHTML = data;
-            });
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion"></textarea>
 
-            /*document.getElementById('test').onclick=function(){
-                alert("Hola mundo")
-            }*/
-    </script>
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria" required class="modal-content">
+                    <option value="Bebida caliente">Bebida caliente</option>
+                    <option value="Bebida fría">Bebida fría</option>
+                    <option value="Postre">Postre</option>
+      </select>
+
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" step="1">
+
+      <label for="img-url">URL de imagen</label>
+      <input type="text" id="img-url" name="img-url">
+
+      <label for="promocion">Promoción</label>
+      <input type="checkbox" id="promocion" name="promocion">
+
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
+
+    <script src="/js/admin.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>

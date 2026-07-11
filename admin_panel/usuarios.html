@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/estilos/admin.css">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
     <div id="header-placeholder" class="header-placeholder"></div>
@@ -16,13 +16,12 @@
         <div class="filtros_container">
             <div class="search_box">
                 <ion-icon name="search-outline" class="icono_filtro"></ion-icon>
-                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <input type="text" id="searchInput" placeholder="Buscar usuarios">
             </div>
         </div>
         <div>
-            <a href="#" class="btn_add">Añadir nuevo</a>
-            <a href="#" class="btn_edit">Modificar</a>
-            <a href="#" class="btn_delete">Borrar</a>
+            <button class="btn-edit">Modificar</button>
+            <button class="btn-delete">Borrar</button>
         </div>
     </section>
         <table>
@@ -30,10 +29,10 @@
                 <th></th>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Apellidos</th>
+                <th>Apellido</th>
                 <th>Correo</th>
-                <th>Puntos acumulados</th>
-                <th>rol?</th>
+                <th>Contraseña</th>
+                <th>Fecha registro</th>
             </tr>
             <tr>
                 <td><input type="checkbox" name="seleccion" value="1"></td>
@@ -41,7 +40,8 @@
                 <td>Juan</td>
                 <td>Dominguez</td>
                 <td>juan123@gmail.com</td>
-                <td>60</td>
+                <td>contra123</td>
+                <td>08-07-2026</td>
             </tr>
             <tr>
                 <td><input type="checkbox" name="seleccion" value="1"></td>
@@ -49,26 +49,13 @@
                 <td>Pepe</td>
                 <td>Morales</td>
                 <td>pepe123@gmail.com</td>
-                <td>120</td>
+                <td>contra123</td>
+                <td>08-07-2026</td>
             </tr>
         </table>
     </main>
 
-    <script>
-        // Cargar el encabezado
-        fetch('/admin_panel/admin_header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-
-        // Cargar el menú lateral
-        fetch('/admin_panel/admin_menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu-placeholder').innerHTML = data;
-            });
-    </script>
+    <script src="/js/admin.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
