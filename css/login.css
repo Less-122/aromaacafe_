@@ -155,7 +155,6 @@ body {
     justify-content: center;
     position: relative;
 }
-
 .banner img {
     position: absolute;
     top: 0;
@@ -201,7 +200,6 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        /* Cada formulario se centrará con transform, pero con diferentes desplazamientos para el toggle */
     }
 
     .login {

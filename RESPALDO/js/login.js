@@ -1,6 +1,7 @@
-const signIn = document.getElementById('sign-in')
-const signUp = document.getElementById('sign-up')
-const form = document.getElementById('form')
+// js/login.js
+const signIn = document.getElementById('sign-in');
+const signUp = document.getElementById('sign-up');
+const form = document.getElementById('form');
 
 if (signIn && signUp && form) {
     signIn.addEventListener('click', () => {
