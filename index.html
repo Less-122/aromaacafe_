@@ -6,9 +6,10 @@
     <title>Aroma a Cafe</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
+
 <body>
    <header id="main-header" class="smart-header">
-        <div class="container menu-container">
+        <div class="container menu-container"> <!-- Agrupa todos los elementos del menu-->
             <img src="img/Logo/Isotipo.jpg" alt="Isotipo" class="Isotipo">
             <a href="#inicio" class="logo">Aroma a Café</a>
             <nav class="navbar">
@@ -22,19 +23,19 @@
                 </ul>
             </nav>
             
-            <div class="header-actions">
+            <div class="header-actions"> <!-- para iniciar sesion y el menu-->
                 <button class="icon-btn" aria-label="Iniciar Sesión">
-                    <img src="img/iconos/user-group-solid-full (1).svg" alt="Login">
+                    <img src="img/iconos/icon-usuario.png" alt="Login">
                 </button>
                 <button class="icon-btn" aria-label="Ver Carrito">
-                    <img src="img/iconos/cart-shopping-solid-full.svg" alt="Carrito">
+                    <img src="img/iconos/icon-carrito.png" alt="Carrito">
                 </button>
             </div>
             
         </div>
     </header>
 
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero"> <!-- Bienvenida y descripcion-->
         <div class="container hero-content">
             <div class="hero-txt">
                 <h1>Bienvenid@<br><span>Un rincón con aroma a hogar y sabor a café.</span></h1>
@@ -46,7 +47,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                 <a href="#nosotros" class="btn-primary">Información</a>
             </div>
             <div class="hero-img">
-                <img src="img/productos/Helado.jpeg" alt="Delicias de café y helado">
+                <img src="img/productos/Postres/sueño-chocolate.jpeg" alt="Delicias de café y helado">
             </div>
         </div>
     </section>
@@ -64,7 +65,11 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                     <div class="product-txt">
                         <h3>Paquete Matutino</h3>
                         <p>Croissant plano con mantequilla y café.</p>
+                    <div class="producto-footer">
                         <span class="precio">$89.00</span>
+                        <button class="btn-agCarrito">Comprar</button>
+                    </div>
+                        
                     </div>
                 </div>
                 <div class="box">
@@ -73,7 +78,10 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                     <div class="product-txt">
                         <h3>Doble Cold Brew</h3>
                         <p>Dos cafés extraídos en frío por 18 hrs.</p>
-                        <span class="precio">$99.00</span>
+                        <div class="producto-footer">
+                            <span class="precio">$99.00</span>
+                            <button class="btn-agCarrito">Comprar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="box">
@@ -82,7 +90,10 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                     <div class="product-txt">
                         <h3>Combo Dulce</h3>
                         <p>Rebanada de pastel a elección + Americano.</p>
-                        <span class="precio">$75.00</span>
+                        <div class="producto-footer">
+                            <span class="precio">$75.00</span>
+                            <button class="btn-agCarrito">Comprar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="box">
@@ -91,7 +102,10 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                     <div class="product-txt">
                         <h3>Especial Mocha</h3>
                         <p>Mocha blanco con extra shot de espresso.</p>
-                        <span class="precio">$60.00</span>
+                        <div class="producto-footer">
+                            <span class="precio">$60.00</span>
+                            <button class="btn-agCarrito">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,36 +119,102 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         
         <div class="box-container limit-grid">
             <div class="box product-item">
-                <img src="img/taza.png" alt="Blanco plano">
+                <img src="img/productos/Bebidas-calientes/Primer-sorbo.jpeg" alt="Primer sorbo">
                 <div class="product-txt">
-                    <h3>Blanco plano</h3>
-                    <p>Microespuma terciopelo vertida sobre un doble ristretto.</p>
-                    <span class="precio">$59.00</span>
+                    <h3>Primer sorbo</h3>
+                    <p>Espresso doble.
+                        El equilibrio perfecto entre intensidad y aroma. Un café corto, fuerte y lleno de carácter para comenzar el día con energía.</p>
+                    <div class="producto-footer">
+                        <span class="precio">$59.00</span>
+                        <button class="btn-agCarrito">Comprar</button>
+                    </div>
                 </div>
             </div>
             <div class="box product-item">
-        <img src="img/producto18.png" alt="Latte Macchiato">
+        <img src="img/productos/Bebidas-calientes/brisa-de-canela.jpeg" alt="Brisa de Canela">
         <div class="product-txt">
-            <h3>Latte Macchiato</h3>
-            <p>Leche manchada con un shot de espresso sedoso y una capa ligera de espuma.</p>
-            <span class="precio">$49.00</span>
+            <h3>Brisa de Canela</h3>
+            <p>Latte con canela.
+                El equilibrio perfecto entre intensidad y aroma. Un café corto, fuerte y lleno de carácter para comenzar el día con energía.
+            </p>
+            <div class="producto-footer">
+                <span class="precio">$49.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
            <div class="box product-item">
-        <img src="img/producto19.png" alt="Café Mocha">
+        <img src="img/productos/Bebidas-calientes/Moka-dorado.jpeg" alt="Moka Dorado">
         <div class="product-txt">
-            <h3>Café Mocha</h3>
-            <p>Perfecta armonía entre espresso, salsa de chocolate oscuro y leche vaporizada.</p>
-            <span class="precio">$59.00</span>
+            <h3>Moka Dorado</h3>
+            <p>Café mocha.
+                La mezcla ideal entre café espresso y chocolate, coronada con espuma de leche para un sabor dulce e irresistible.
+            </p>
+            <div class="producto-footer">
+                <span class="precio">$59.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
     <div class="box product-item">
-        <img src="img/producto20.png" alt="Cold Brew Clásico">
+        <img src="img/productos/Bebidas-calientes/Nube-vainilla.jpeg" alt="Nube de vainilla">
         <div class="product-txt">
-            <h3>Cold Brew Clásico</h3>
-            <p>Café extraído en frío por 18 horas, resultando en una bebida suave y de baja acidez.</p>
-            <span class="precio">$89.00</span>
+            <h3>Nube de vainilla </h3>
+            <p>Latte de vainilla. Leche vaporizada, espresso y vainilla natural que crean una bebida suave, cremosa y reconfortante.</p>
+            <div class="producto-footer">
+                <span class="precio">$89.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-calientes/Caramelo-Tostado.jpeg" alt="Caramelo Tostado">
+        <div class="product-txt">
+            <h3>Caramelo Tostado </h3>
+            <p>Cappuccino de caramelo. Un cappuccino clásico con espuma ligera y un toque de caramelo que aporta dulzura en cada taza.</p>
+            <div class="producto-footer">
+                <span class="precio">$96.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-calientes/Cacao-cremoso.jpeg" alt="Cacao cremoso">
+        <div class="product-txt">
+            <h3>Cacao cremoso </h3>
+            <p>Chocolate caliente. Chocolate preparado con leche caliente y una textura cremosa que recuerda el sabor de casa.</p>
+            <div class="producto-footer">
+                <span class="precio">$66.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-calientes/manzanilla.jpeg" alt="Té del Jardín">
+        <div class="product-txt">
+            <h3>Té del Jardín </h3>
+            <p>Té de manzanilla con miel.
+                Una infusión ligera acompañada de miel natural, perfecta para disfrutar un momento de tranquilidad.</p>
+            <div class="producto-footer">
+                <span class="precio">$45.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-calientes/otoño.jpeg" alt="Otoño">
+        <div class="product-txt">
+            <h3>Otoño </h3>
+            <p>Café de olla tradicional. Café preparado al estilo tradicional con piloncillo y canela, lleno de aromas que evocan los sabores de México.</p>
+            <div class="producto-footer">
+                <span class="precio">$79.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
             </div>
@@ -144,49 +224,110 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </section>
 
+ <!-- CATEGORIA DE BEBIDAS FRIAS-->
+
     <section id="frias" class="categoria-seccion container">
         <h2>Bebidas Frías</h2>
         <p class="subtitulo">¡Especialmente para esta temporada de calor!</p>
         <div class="box-container limit-grid">
-    <!-- ID 29 -->
+
     <div class="box product-item">
-        <img src="img/producto29.png" alt="Iced Americano">
+        <img src="img/productos/Bebidas-frias/Bosque-Purpura.jpeg" alt="Bosque-Purpura">
         <div class="product-txt">
-            <h3>Iced Americano</h3>
-            <p>Doble shot de espresso vertido sobre agua fría y hielos, refrescante e intenso.</p>
-            <span class="precio">$55.00</span>
+            <h3>Bosque purpura</h3>
+            <p> Mezcla de frutos naturales con una textura ligera y un sabor fresco lleno de color.</p>
+            <div class="producto-footer">
+                <span class="precio">$55.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 30 -->
     <div class="box product-item">
-        <img src="img/producto30.png" alt="Iced Latte Vainilla">
+        <img src="img/productos/Bebidas-frias/Brisa-fria.jpeg" alt="Brisa-fria">
         <div class="product-txt">
-            <h3>Iced Latte Vainilla</h3>
-            <p>Espresso con leche fría, hielo y un toque exacto de jarabe artesanal de vainilla.</p>
-            <span class="precio">$68.00</span>
+            <h3>Brisa Fría</h3>
+            <p>Cold Brew. Café preparado lentamente en frío durante varias horas para lograr un sabor suave, refrescante y de baja acidez.</p>
+            <div class="producto-footer">
+                <span class="precio">$68.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 31 -->
     <div class="box product-item">
-        <img src="img/producto31.png" alt="Frappé de Oreo">
+        <img src="img/productos/Bebidas-frias/Nube-helada.jpeg" alt="Nube Helada">
         <div class="product-txt">
-            <h3>Frappé de Oreo</h3>
-            <p>Base cremosa licuada con hielo y galletas Oreo, decorado con crema batida y chocolate.</p>
-            <span class="precio">$75.00</span>
+            <h3>Nube Helada</h3>
+            <p>Frappé de vainilla. Bebida cremosa con hielo triturado y un delicado sabor a vainilla que refresca cada momento. </p>
+            <div class="producto-footer">
+                <span class="precio">$75.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 32 -->
+
     <div class="box product-item">
-        <img src="img/producto32.png" alt="Espresso Tónica">
+        <img src="img/productos/Bebidas-frias/Moka-ice.jpeg" alt="Moka Ice">
         <div class="product-txt">
-            <h3>Espresso Tónica</h3>
-            <p>Una combinación audaz de agua tónica premium, hielo y un shot de espresso flotando.</p>
-            <span class="precio">$65.00</span>
+            <h3>Moka Ice</h3>
+            <p>Frappé moka. Café, chocolate y hielo mezclados en una bebida cremosa ideal para los amantes del moka.</p>
+            <div class="producto-footer">
+                <span class="precio">$65.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-frias/Dulce-felicidad.jpeg" alt="Dulce-felicidad">
+        <div class="product-txt">
+            <h3>Dulce Felicidad</h3>
+            <p>Frappé de caramelo. Una combinación de café, leche y caramelo con una textura suave y un dulzor perfectamente equilibrado.</p>
+            <div class="producto-footer">
+                <span class="precio">$88.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-frias/Tropica-lFresh.jpeg" alt="Tropical Fresh">
+        <div class="product-txt">
+            <h3>Tropical Fresh</h3>
+            <p>Té helado de durazno. Té frío con un delicado toque de durazno que ofrece una bebida ligera y muy refrescante.</p>
+            <div class="producto-footer">
+                <span class="precio">$68.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-frias/Espuma-Gelada.jpeg" alt="Espuma Helada">
+        <div class="product-txt">
+            <h3>Espuma Helada</h3>
+            <p>Iced Latte. Espresso servido sobre hielo con leche fría, logrando una bebida cremosa y refrescante.</p>
+            <div class="producto-footer">
+                <span class="precio">$96.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Bebidas-frias/Cafe-nevado.jpeg" alt="Café Nevado">
+        <div class="product-txt">
+            <h3>Café Nevado</h3>
+            <p>Café frío con helado. Café helado acompañado de una bola de helado que aporta suavidad y un toque especial en cada sorbo.</p>
+            <div class="producto-footer">
+                <span class="precio">$99.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
 </div>
         <div class="btn-container-center">
             <button class="btn-secundario">Ver más productos</button>
@@ -195,51 +336,109 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
 
     </section>
 
+<!-- CATEGORIA DE POSTRES -->
     <section id="postres" class="categoria-seccion container">
         <h2>Postres</h2>
         <p class="subtitulo">¡Date un gusto de la vida!</p>
           <div class="box-container limit-grid">
-            <!-- ID 39 -->
+
     <div class="box product-item">
-        <img src="img/producto39.png" alt="Rebanada de Pastel de Zanahoria">
+        <img src="img/productos/Postres/Dulce-tentacion.jpeg" alt="Dulce Tentación">
         <div class="product-txt">
-            <h3>Pastel de Zanahoria</h3>
-            <p>Bizcocho especiado con nuez y zanahoria rallada, cubierto de betún cremoso de queso de cabra.</p>
-            <span class="precio">$78.00</span>
+            <h3>Dulce Tentación</h3>
+            <p>Brownie de chocolate. Brownie recién horneado con un intenso sabor a chocolate y una textura suave por dentro.</p>
+            <div class="producto-footer">
+                <span class="precio">$78.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 40 -->
     <div class="box product-item">
-        <img src="img/producto40.png" alt="Brownie con Nuez">
+        <img src="img/productos/Postres/Momento-Dulce.jpeg" alt="Momento Dulce">
         <div class="product-txt">
-            <h3>Brownie Fudge</h3>
-            <p>Bizcocho denso de chocolate semi-amargo con trozos de nuez pecana, crujiente por fuera.</p>
-            <span class="precio">$52.00</span>
+            <h3>Momento Dulce</h3>
+            <p>Cheesecake de frutos rojos. Suave pastel de queso acompañado de una deliciosa salsa de frutos rojos que equilibra cada bocado.</p>
+            <div class="producto-footer">
+                <span class="precio">$69.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 41 -->
     <div class="box product-item">
-        <img src="img/producto41.png" alt="Tartaleta de Frutas">
+        <img src="img/productos/Postres/Dulce-Zanahoria.jpeg" alt="Delicia de Zanahoria">
         <div class="product-txt">
-            <h3>Tartaleta de Frutas</h3>
-            <p>Base de masa quebrada rellena de crema pastelera de vainilla, decorada con fresas y kiwi.</p>
-            <span class="precio">$65.00</span>
+            <h3>Delicia de Zanahoria</h3>
+            <p>Pastel de zanahoria. Esponjoso pastel elaborado con zanahoria y especias, cubierto con un cremoso betún de queso.</p>
+            <div class="producto-footer">
+                <span class="precio">$65.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
 
-    <!-- ID 42 -->
     <div class="box product-item">
-        <img src="img/producto42.png" alt="Tiramisú Tradicional">
+        <img src="img/productos/Postres/Nuez-dorada.jpeg" alt="Nuez Dorada">
         <div class="product-txt">
-            <h3>Tiramisú de la Casa</h3>
-            <p>Soletas bañadas en café espresso y licor, intercaladas con crema de queso mascarpone.</p>
-            <span class="precio">$85.00</span>
+            <h3>Nuez Dorada</h3>
+            <p>Muffin de nuez. Muffin suave con trozos de nuez que aportan un ligero toque crujiente y un sabor casero.</p>
+            <div class="producto-footer">
+                <span class="precio">$77.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
     </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Postres/Deditos-dorados.png" alt="Deditos Dorados">
+        <div class="product-txt">
+            <h3>Deditos Dorados</h3>
+            <p>Churros tradicionales. Delicados churros recién preparados, espolvoreados con azúcar y canela, perfectos para acompañar una taza de café o chocolate caliente.</p>
+            <div class="producto-footer">
+                <span class="precio">$48.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
         </div>
-        
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Postres/sueño-chocolate.jpeg" alt="Sueño de Chocolate">
+        <div class="product-txt">
+            <h3>Sueño de Chocolate</h3>
+            <p>Helado de chocolate. Cremoso helado de chocolate elaborado con cacao de alta calidad, de textura suave y un sabor intenso que conquista desde la primera cucharada.</p>
+            <div class="producto-footer">
+                <span class="precio">$62.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Postres/Dulce recuerdo.jpeg" alt=" Dulce Recuerdo">
+        <div class="product-txt">
+            <h3>Dulce Recuerdo</h3>
+            <p>Arroz con leche. Un postre tradicional preparado con arroz, leche y un toque de canela, cuya receta casera evoca los sabores y recuerdos de hogar.</p>
+            <div class="producto-footer">
+                <span class="precio">$55.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box product-item">
+        <img src="img/productos/Postres/cielo-chocolate.jpeg" alt="Cielo de Chocolate">
+        <div class="product-txt">
+            <h3>Cielo de Chocolate</h3>
+            <p>Pastel de chocolate. Capas de bizcocho de chocolate cubiertas con una cremosa ganache que conquista desde el primer bocado.</p>
+            <div class="producto-footer">
+                <span class="precio">$87.00</span>
+                <button class="btn-agCarrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
         
         <div class="btn-container-center">
             <button class="btn-secundario">Ver más productos</button>
