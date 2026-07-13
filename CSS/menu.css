@@ -155,6 +155,11 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 .hero-img img {
@@ -260,6 +265,7 @@ body {
     object-fit: cover;
 }
 
+/*Diseño de los productos*/
 .product-txt {
     padding: 20px;
     display: flex;
@@ -281,10 +287,27 @@ body {
     flex-grow: 1;
 }
 
+.product-item-extra{
+    display: none;
+}
+
 .precio {
     font-size: 18px;
     font-weight: 700;
     color: #2C1A0E;
+}
+
+.precio-anterior{
+    color: #d32f2f;       /* Rojo */
+    text-decoration: line-through; /* Tachado */
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.precio-promo{
+    color: hwb(92 0% 53%);       /* O el color que ya usas */
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .tag-oferta {
@@ -383,6 +406,16 @@ body {
     .hero-content {
         flex-direction: column;
         text-align: center;
+    }
+    .hero-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-img img {
+        width: 90%;
+        display: flex;
+        justify-content: center;
     }
 }
 

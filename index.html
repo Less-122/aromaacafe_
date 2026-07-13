@@ -24,10 +24,10 @@
             </nav>
             
             <div class="header-actions"> <!-- para iniciar sesion y el menu-->
-                <button class="icon-btn" aria-label="Iniciar Sesión">
+                <button class="icon-btn" aria-label="Iniciar Sesión" id="boton-login">
                     <img src="img/iconos/icon-usuario.png" alt="Login">
                 </button>
-                <button class="icon-btn" aria-label="Ver Carrito">
+                <button class="icon-btn" aria-label="Ver Carrito" id="boton-carrito">
                     <img src="img/iconos/icon-carrito.png" alt="Carrito">
                 </button>
             </div>
@@ -47,11 +47,11 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                 <a href="#nosotros" class="btn-primary">Información</a>
             </div>
             <div class="hero-img">
-                <img src="img/productos/Postres/sueño-chocolate.jpeg" alt="Delicias de café y helado">
+                <img id="PromoImagen" src="img/productos/Postres/sueño-chocolate.jpeg" alt="Delicias de café y helado" alt="Promociones">
             </div>
         </div>
     </section>
-
+<!-- APARTADO DE PROMOCIONES-->
     <section id="promociones" class="categoria-seccion container">
         <h2>Promociones</h2>
         <p class="subtitulo">Ofertas por tiempo limitado</p>
@@ -61,12 +61,13 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
             <div class="carrusel-container" id="promos-carousel">
                 <div class="box">
                     <div class="tag-oferta">Ahorra un 20%</div>
-                    <img src="img/productos/Bebidas-calientes/cafe.jpeg" alt="Promoción 1">
+                    <img src="img/productos/Promociones/Desayuno-Amanecer.jpeg" alt="Promoción 1">
                     <div class="product-txt">
-                        <h3>Paquete Matutino</h3>
-                        <p>Croissant plano con mantequilla y café.</p>
+                        <h3>Desayuno al amanecer</h3>
+                        <p>Primer sorbo + Delicia de zanahoria</p>
                     <div class="producto-footer">
-                        <span class="precio">$89.00</span>
+                        <span class="precio-anterior">$124.00</span>
+                        <span class="precio-promo">$99.20</span>
                         <button class="btn-agCarrito">Comprar</button>
                     </div>
                         
@@ -74,36 +75,39 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
                 </div>
                 <div class="box">
                     <div class="tag-oferta">2x1</div>
-                    <img src="img/cafehel.png" alt="Promoción 2">
+                    <img src="img/productos/Promociones/Doble-felicidad.jpeg" alt="Promoción 2">
                     <div class="product-txt">
-                        <h3>Doble Cold Brew</h3>
-                        <p>Dos cafés extraídos en frío por 18 hrs.</p>
+                        <h3>Doble felicidad</h3>
+                        <p>Dos frappes de caramelo para disfrutar enpareja.</p>
                         <div class="producto-footer">
-                            <span class="precio">$99.00</span>
+                            <span class="precio-anterior">$176.00</span>
+                            <span class="precio-promo">$88.00</span>
                             <button class="btn-agCarrito">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="tag-oferta">-15%</div>
-                    <img src="img/pastel.jpeg" alt="Promoción 3">
+                    <img src="img/productos/Promociones/Combo-dulce.jpeg" alt="Promoción 3">
                     <div class="product-txt">
                         <h3>Combo Dulce</h3>
-                        <p>Rebanada de pastel a elección + Americano.</p>
+                        <p>Momento dulce + Cielo de chocolate</p>
                         <div class="producto-footer">
-                            <span class="precio">$75.00</span>
+                            <span class="precio-anterior">$156.00</span>
+                            <span class="precio-promo">$132.60</span>
                             <button class="btn-agCarrito">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="tag-oferta">Nuevo</div>
-                    <img src="img/taza.png" alt="Promoción 4">
+                    <img src="img/productos/Postres/sueño-chocolate.jpeg" alt="Promoción 4">
                     <div class="product-txt">
-                        <h3>Especial Mocha</h3>
-                        <p>Mocha blanco con extra shot de espresso.</p>
+                        <h3>Especial Sueño de chocolate</h3>
+                        <p>Cremoso helado de chocolate elaborado con cacao de alta calidad, de textura <br>
+                            suave y un sabor intenso que conquista desde la primera cucharada.</p>
                         <div class="producto-footer">
-                            <span class="precio">$60.00</span>
+                            <span class="precio">$62.00</span>
                             <button class="btn-agCarrito">Comprar</button>
                         </div>
                     </div>
@@ -169,7 +173,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-calientes/Caramelo-Tostado.jpeg" alt="Caramelo Tostado">
         <div class="product-txt">
             <h3>Caramelo Tostado </h3>
@@ -181,7 +185,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-calientes/Cacao-cremoso.jpeg" alt="Cacao cremoso">
         <div class="product-txt">
             <h3>Cacao cremoso </h3>
@@ -193,7 +197,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-calientes/manzanilla.jpeg" alt="Té del Jardín">
         <div class="product-txt">
             <h3>Té del Jardín </h3>
@@ -206,7 +210,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-calientes/otoño.jpeg" alt="Otoño">
         <div class="product-txt">
             <h3>Otoño </h3>
@@ -220,7 +224,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
             </div>
         
         <div class="btn-container-center">
-            <button class="btn-secundario">Ver más productos</button>
+            <button id="btn-masBcalientes" class="btn-secundario">Ver más productos</button>
         </div>
     </section>
 
@@ -280,7 +284,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-frias/Dulce-felicidad.jpeg" alt="Dulce-felicidad">
         <div class="product-txt">
             <h3>Dulce Felicidad</h3>
@@ -292,7 +296,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-frias/Tropica-lFresh.jpeg" alt="Tropical Fresh">
         <div class="product-txt">
             <h3>Tropical Fresh</h3>
@@ -304,7 +308,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-frias/Espuma-Gelada.jpeg" alt="Espuma Helada">
         <div class="product-txt">
             <h3>Espuma Helada</h3>
@@ -316,7 +320,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Bebidas-frias/Cafe-nevado.jpeg" alt="Café Nevado">
         <div class="product-txt">
             <h3>Café Nevado</h3>
@@ -330,7 +334,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
 
 </div>
         <div class="btn-container-center">
-            <button class="btn-secundario">Ver más productos</button>
+            <button id="btn-masBFrias" class="btn-secundario">Ver más productos</button>
         </div>
 
 
@@ -390,7 +394,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Postres/Deditos-dorados.png" alt="Deditos Dorados">
         <div class="product-txt">
             <h3>Deditos Dorados</h3>
@@ -402,7 +406,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Postres/sueño-chocolate.jpeg" alt="Sueño de Chocolate">
         <div class="product-txt">
             <h3>Sueño de Chocolate</h3>
@@ -414,7 +418,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Postres/Dulce recuerdo.jpeg" alt=" Dulce Recuerdo">
         <div class="product-txt">
             <h3>Dulce Recuerdo</h3>
@@ -426,7 +430,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
         </div>
     </div>
 
-    <div class="box product-item">
+    <div class="box product-item-extra">
         <img src="img/productos/Postres/cielo-chocolate.jpeg" alt="Cielo de Chocolate">
         <div class="product-txt">
             <h3>Cielo de Chocolate</h3>
@@ -441,7 +445,7 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
 
         
         <div class="btn-container-center">
-            <button class="btn-secundario">Ver más productos</button>
+            <button id="btn-masPostres" class="btn-secundario">Ver más productos</button>
         </div>
     </section>
 
@@ -474,5 +478,5 @@ Nos apasiona recibirte con el olor a grano recién molido y pan calientito salie
     </footer>
 
     <script src="js/carrito.js"></script>
-    <script src="js/interfaz.js"></script> </body>
+    <script src="js/menu.js"></script> </body>
 </html>
