@@ -19,12 +19,12 @@ function actualizarTitulo() {
         document.title = nuevoTitulo + ' | Panel Admin';
     }
     //Traer el header y la barra lateral
-    fetch('/admin_panel/admin_header.html')
+    fetch('admin_header.html')
         .then(response => response.text())
         .then(headerData => {
         document.getElementById('header-placeholder').innerHTML = headerData;
 
-        return fetch('/admin_panel/admin_menu.html');
+        return fetch('admin_menu.html');
         })
         .then(response => response.text())
         .then(menuData => {
@@ -72,3 +72,11 @@ window.addEventListener('click', function(event) {
     event.target.style.display = 'none';
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    // Llamada al menú principal
+    cargarComponente("menu-placeholder", "admin_menu.html");
+    
+    // Llamada al segundo HTML que acompleta la interfaz
+    cargarComponente("menu-complemento-placeholder", "admin_menu_extra.html");
+});
+
