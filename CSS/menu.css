@@ -377,7 +377,23 @@ body {
 .footer a:hover {
     color: #8DA27B;
 }
-
+/*Footer inferior para el inicio de sesion*/
+.divisor{
+    border: none;
+    height: 1px;
+    background-color: #705335;
+    margin-top: 30px;
+}
+.admin-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+.admin-footer-login{
+    padding: 0;
+}
 /* --- 9. Responsividad --- */
 @media (max-width: 1024px) {
     .limit-grid { 
