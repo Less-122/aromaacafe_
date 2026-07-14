@@ -40,14 +40,15 @@ body {
     height: 30px;
     border-radius: 8px;
     border: none;
-    background-color: #2C1A0E;
+    background-color: #056d39;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .btn-agCarrito:hover{
-    background-color: #705335;
+    background-color: #004e11;
+;
 }
 /* --- Smart Header / Encabezado inteligente --- */
 
@@ -369,7 +370,9 @@ body {
 .footer p, .footer a {
     color: #dedad7;
     font-size: 14px;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8ps;
     margin-bottom: 10px;
     transition: color 0.3s;
 }
@@ -469,3 +472,13 @@ body {
     object-fit: contain;
     fill: "#FFFFFF";
 }
+
+/*ICONOS DEL FOOTER*/
+.icono-footer{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    
+}
+

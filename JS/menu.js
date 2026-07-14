@@ -18,22 +18,6 @@ if (btnCarrito) {
     });
 }
 
-//Imagen promocional del encabezado
-const promoImg = document.getElementById("PromoImagen");
-
-const promociones = [
-    "img/productos/Postres/sueño-chocolate.jpeg",
-    "img/productos/Bebidas-calientes/Primer-sorbo.jpeg",
-    "img/productos/Bebidas-frias/Nube-helada.jpeg",
-    "img/productos/Postres/Deditos-dorados.png"
-];
-
-let indice = 0;
-
-setInterval(() => {
-    indice = (indice + 1) % promociones.length;
-    promoImg.src = promociones[indice];
-}, 4000);
 
 //Agregar al carrito
 const botonesComprar = document.querySelectorAll(".btn-agCarrito");
