@@ -1,0 +1,14 @@
+// js/login.js
+const signIn = document.getElementById('sign-in');
+const signUp = document.getElementById('sign-up');
+const form = document.getElementById('form');
+
+if (signIn && signUp && form) {
+    signIn.addEventListener('click', () => {
+        form.classList.remove('toggle');
+    });
+    
+    signUp.addEventListener('click', () => {
+        form.classList.add('toggle');
+    });
+}

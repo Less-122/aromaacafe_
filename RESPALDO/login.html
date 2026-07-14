@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/login.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="form-container">
+            <div class="form" id="form">
+                <form class="login">
+                    <h2>Bienvenid@ </h2>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="buttons">
+                        <button>Iniciar sesión</button>
+                    </div>
+                        <p class="cuenta">¿No tiene una cuenta? <a href="#" id="sign-up">Crear cuenta</a></p>
+                </form>
+                <form class="registro">
+                    <h2>Crear cuenta</h2>
+                    <p>Usa tu email para registrarte</p>
+                    <div class="input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="buttons">
+                        <button>Registrar</button>
+                    </div>
+                        <p class="cuenta">¿Ya tiene una cuenta? <a href="#" id="sign-in">Iniciar sesión</a></p>
+                </form>
+            </div>
+        </div>
+
+            <div class="banner">
+                <div class="logo_container">
+                    <img src="img/LogoCafetería.png" alt="">
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
