@@ -76,3 +76,94 @@ function vaciarCarrito(e) {
         lista.removeChild(lista.firstChild);
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const cartItemsSection = document.querySelector(".cart-items-section");
+    
+    const btnConfirmar = document.querySelector(".btn-confirm-order");
+
+    if (cartItemsSection) {
+       // borrar, sumar y restar productos
+        cartItemsSection.addEventListener("click", (e) => {
+            
+           
+            if (e.target.classList.contains("qty-btn") && e.target.textContent === "+") {
+                const input = e.target.parentElement.querySelector(".qty-input");
+                input.value = parseInt(input.value) + 1;
+                actualizarTotales();
+            }
+
+           
+            if (e.target.classList.contains("qty-btn") && e.target.textContent === "-") {
+                const input = e.target.parentElement.querySelector(".qty-input");
+                if (parseInt(input.value) > 1) {
+                    input.value = parseInt(input.value) - 1;
+                    actualizarTotales();
+                }
+            }
+
+            // elimina
+            if (e.target.classList.contains("delete-item-btn")) {
+                const cartItem = e.target.closest(".cart-item");
+                cartItem.remove();
+                actualizarTotales();
+            }
+        });
+
+        //detecta cambios 
+        cartItemsSection.addEventListener("change", (e) => {
+            if (e.target.classList.contains("qty-input")) {
+                if (e.target.value < 1) e.target.value = 1;
+                actualizarTotales();
+            }
+        });
+    }
+
+    // pedido
+    if (btnConfirmar) {
+        btnConfirmar.addEventListener("click", () => {
+            const totalText = document.querySelector(".summary-row.total span:last-child").textContent;
+            
+            // Verificacion
+
+            const items = document.querySelectorAll(".cart-item");
+            if(items.length === 0) {
+                alert("Tu carrito está vacío. Agrega productos antes de confirmar.");
+                return;
+            }
+
+            alert(`¡Pedido confirmado con éxito! Total a pagar en sucursal: ${totalText}`);
+           
+        });
+    }
+
+    // CALCULO 
+    function actualizarTotales() {
+        const cartItems = document.querySelectorAll(".cart-item");
+        let subtotal = 0;
+        let totalProductos = 0;
+
+        cartItems.forEach(item => {
+            
+            const precioTexto = item.querySelector(".item-price").textContent;
+            const precio = parseFloat(precioTexto.replace("$", ""));
+            
+           
+            const cantidad = parseInt(item.querySelector(".qty-input").value);
+
+            subtotal += precio * cantidad;
+            totalProductos += cantidad;
+        });
+
+        // Actualizacion 
+        const subtotalLabel = document.querySelector(".summary-row:nth-of-type(1) span:first-child");
+        const subtotalValue = document.querySelector(".summary-row:nth-of-type(1) span:last-child");
+        const totalValue = document.querySelector(".summary-row.total span:last-child");
+
+        if (subtotalLabel && subtotalValue && totalValue) {
+            subtotalLabel.textContent = `Subtotal (${totalProductos} producto${totalProductos !== 1 ? 's' : ''})`;
+            subtotalValue.textContent = `$${subtotal.toFixed(2)}`;
+            totalValue.textContent = `$${subtotal.toFixed(2)}`; //Poner el descuento
+        }
+    }
+});
