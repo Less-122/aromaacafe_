@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/estilos/admin.css">
+</head>
+<body>
+
+    <div id="header-placeholder" class="header-placeholder"></div>
+
+    <div id="menu-placeholder" class="menu-placeholder"></div>
+
+    <main class="main_container">
+        <h1 class="titulo">Gestión de Productos</h1>
+    <section>
+        <div class="filtros_container">
+            <div class="search_box">
+                <ion-icon name="search-outline" class="icono_filtro"></ion-icon>
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+            </div>
+
+            <div class="select_box">
+                <ion-icon name="pricetag-outline" class="icono_filtro"></ion-icon>
+                <select name="seleccion" class="custom_select" required>
+                    <option value="" disabled selected>Todas las categorías</option>
+                    <option value="valor1">Bebidas calientes</option>
+                    <option value="valor2">Bebidas frías</option>
+                    <option value="valor3">Postres</option>
+                </select>
+            </div>
+        </div>
+        
+        <div>
+            <a href="#" class="btn_add">Añadir nuevo</a>
+            <a href="#" class="btn_edit">Modificar</a>
+            <a href="#" class="btn_delete">Borrar</a>
+        </div>
+    </section>
+    
+    <table>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>img_url</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="seleccion" value="1"></td>
+                <td>456</td>
+                <td>Hogar</td>
+                <td>Café ....</td>
+                <td>Bebida caliente</td>
+                <td>90</td>
+                <td>hogar.jpg</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="seleccion" value="2"></td>
+                <td>456</td>
+                <td>Hogar</td>
+                <td>Café ....</td>
+                <td>Bebida caliente</td>
+                <td>90</td>
+                <td>hogar.jpg</td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+        // Cargar el encabezado
+        fetch('/admin_panel/admin_header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Cargar el menú lateral
+        fetch('/admin_panel/admin_menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-placeholder').innerHTML = data;
+            });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
